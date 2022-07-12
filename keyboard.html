@@ -1,0 +1,25 @@
+<!-- 更多 keyCode 可以访问链接 https://juejin.cn/post/7023645498410008606-->
+
+<html>
+
+<head>
+    <script>
+        document.onkeydown = function (e) {
+            var keyNum = window.event ? e.keyCode : e.which;
+
+            if (keyNum == 13) document.body.innerHTML += "a";
+            if (keyNum == 32) document.body.innerHTML += "b";
+            if (keyNum == 28) document.body.innerHTML += "c";
+        }
+    </script>
+</head>
+
+<body>
+    <p>这是一个网页</p>
+    <p>按空格显示一个 b</p>
+    <p>按回车显示一个 a</p>
+    <p>原理是使用 keyCode，可以打开 JavaScript 源代码查看</p>
+    <p>更多 keyCode 可以访问<a href="https://juejin.cn/post/7023645498410008606">这里</a></p>
+</body>
+
+</html>
