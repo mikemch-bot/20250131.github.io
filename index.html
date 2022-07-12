@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>---20250131---</title>
-  </head>
- 
-  <body>
+</head>
+
+<body>
     This is a blog of 20250131,JingNuoWang031.<br>
     You can choose your own language to browse my blog.<br>
     <a href="http://20250131.github.io/en" target="_self">lauguage = English</a><br><br>
     这是20250131，汪璟诺的博客。<br>
     你可以选择自己的语言来浏览我的博客。<br>
     <a href="http://20250131.github.io/zh" target="_self">语言 = 中文</a><br><br>
-    
-  </body>
+
+    <h1>输入框</h1>
+
+
+    <!-- 先实现一个简单的输入框，这是以后内容的基础 -->
+
+
+    请输入你的名字：<input type="text" id="inputbox">
+    <input type="button" id="submit" value="提交"></input>
+
+    <script>
+        subbutton = document.getElementById("submit");
+        ibox = document.getElementById("inputbox");
+
+        subbutton.onclick = function () {
+            document.write("你好，", ibox.value, "。");
+            document.write("欢迎来到我的博客，");
+            document.write("这里可以输入一堆话，也可以执行其它 JavaScript 语句。");
+        }
+    </script>
+
+
+
+</body>
 
 </html>
